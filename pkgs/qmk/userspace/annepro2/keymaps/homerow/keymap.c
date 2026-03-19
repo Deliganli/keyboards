@@ -13,9 +13,6 @@ enum anne_pro_layers {
     FN2,
 };
 
-#define TAPPING_TERM 200
-#define HOLD_ON_OTHER_KEY_PRESS // https://docs.qmk.fm/tap_hold#hold-on-other-key-press
-
 // Homerow
 #define U_A LGUI_T(KC_A)
 #define U_S LALT_T(KC_S)
