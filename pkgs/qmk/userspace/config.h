@@ -5,4 +5,4 @@
 
 //This mode makes tap and hold keys (like Layer-Tap) work better for fast typists, or for high TAPPING_TERM settings. Compared to the "permissive hold" mode, this mode selects the hold action in more cases.
 //If you press a dual-role key, press another key, and then release the dual-role key, all within the tapping term, by default the dual-role key will perform its tap action. If the HOLD_ON_OTHER_KEY_PRESS option is enabled, the dual-role key will perform its hold action instead.
-#define HOLD_ON_OTHER_KEY_PRESS // https://docs.qmk.fm/tap_hold#hold-on-other-key-press
+// #define HOLD_ON_OTHER_KEY_PRESS // https://docs.qmk.fm/tap_hold#hold-on-other-key-press
