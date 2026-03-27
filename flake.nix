@@ -3,7 +3,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
     qmk-firmware = {
-      url = "git+https://github.com/qmk/qmk_firmware?submodules=1";
+      url = "git+https://github.com/qmk/qmk_firmware?ref=master&submodules=1";
       flake = false;
     };
   };
