@@ -6,13 +6,11 @@
   keymap-name,
   lib,
   ext,
+  binary-name ? "${lib.replaceString "/" "_" keyboard-path}_${keymap-name}.${ext}",
   ...
 }:
-let
-  name = "${lib.replaceString "/" "_" keyboard-path}_${keymap-name}.${ext}";
-in
 stdenv.mkDerivation {
-  name = "qmk_${name}";
+  name = "qmk_${binary-name}";
   nativeBuildInputs = [ qmk ];
   src = qmk-src;
   postPatch = ''
@@ -27,6 +25,6 @@ stdenv.mkDerivation {
   '';
 
   installPhase = ''
-    cp ${name} "$out"
+    cp ${binary-name} "$out"
   '';
 }
