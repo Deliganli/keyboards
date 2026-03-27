@@ -33,6 +33,16 @@
             ext = "bin";
           }
         );
+
+        ergodox = (
+          pkgs.callPackage ./pkgs/firmware.nix {
+            inherit qmk-src;
+            keyboard-path = "ergodox_ez";
+            keymap-name = "homerow";
+            binary-name = "ergodox_ez_base_homerow.hex";
+            ext = "hex";
+          }
+        );
       });
     };
 }

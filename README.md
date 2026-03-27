@@ -15,3 +15,14 @@ nix build .#annepro2
 # flash
 annepro2_tools $(realpath ./result)
 ```
+
+## Ergodox EZ
+
+A small pin can press the boot button next to the layer indicator lights on the right half
+
+```bash
+# compile
+nix build .#ergodox
+
+# qmk-toolbox works for flash
+```
