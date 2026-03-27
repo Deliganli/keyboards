@@ -185,6 +185,8 @@ enum anne_pro_layers {
   // ),
 };
 
+
+// LEDs don't work
 void keyboard_post_init_user(void) {
     ap2_led_enable();
     ap2_led_set_profile(7);
